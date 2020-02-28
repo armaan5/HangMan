@@ -1,0 +1,17 @@
+.game>h1{
+    text-align: center;
+}
+
+.game {
+    margin-top: 100px;
+}
+
+.keyboard {
+    margin: 100px;
+    display: grid;
+    /* grid-template: 
+        [row1-start] repeat(10, 1fr) [row1-end]
+        [row2-start] repeat(9, 1fr) [row2-end]
+        [row3-start] repeat(7, 1fr) [row3-end] */
+    grid-template-columns: repeat(9, 1fr);
+}
