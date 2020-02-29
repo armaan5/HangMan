@@ -6,10 +6,16 @@ class Key extends Component {
         this.state = { 
             selected: false
          }
+         this.handleGuess = this.handleGuess.bind(this);
     }
+
+    handleGuess() {
+        this.props.guess(this.props.value);
+    }
+
     render() { 
         return (  
-            <div className = 'key'>
+            <div className = 'key' onClick = {this.handleGuess}>
                 {this.props.value}
             </div>
         );
